@@ -19,6 +19,16 @@ metadata:
 data:
   displayName: Bookstore Example API
   description: A simple Google Example Library API.
+  versions:
+    - metadata:
+        name: v1
+      data:
+        specs:
+        - metadata:
+            name: protos
+          data:
+            fileName: protos.zip 
+            mimeType: application/x.protobuf+zip
   artifacts:
     - kind: ReferenceList
       metadata:
