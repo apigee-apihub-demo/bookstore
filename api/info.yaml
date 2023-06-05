@@ -16,9 +16,37 @@ apiVersion: apigeeregistry/v1
 kind: API
 metadata:
   name: bookstore
+  labels:
+    apihub-business-unit: demo
+    apihub-lifecycle: develop
+    apihub-style: apihub-grpc
+    apihub-target-users: public
+    apihub-team: demo
+    categories: reference
+    provider: apihub-demo
+    source: bookstore
+  annotations:
+    apihub-primary-contact: apigee-apihub-demo@google.com
+    apihub-primary-contact-description: Apigee API Hub demo managers
 data:
-  displayName: Bookstore Example API
-  description: A simple Google Example Library API.
+  displayName: Bookstore API
+  description: Bookstore is a gRPC demonstration API.  It provides a few simple methods for accessing and modifying an inventory of books.
+  recommendedVersion: v1
+  versions:
+    - metadata:
+        name: v1
+        labels:
+          source: petstore
+      data:
+        displayName: v1
+        state: production
+        primarySpec: protos
+        specs:
+        - metadata:
+            name: protos
+          data:
+            fileName: protos.zip 
+            mimeType: application/x.protobuf+zip
   artifacts:
     - kind: ReferenceList
       metadata:
