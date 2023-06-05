@@ -6,14 +6,15 @@ target server that can be used to test gRPC API management systems and clients.
 
 ## Developing the Bookstore API with the API Registry
 
-Here's a brief exercise that shows how the registry can be used to track and
-assist in the process of deploying and managing an instance of the Bookstore
-API.
+Here's a brief exercise that shows how the API Registry can be used to track
+and assist in the process of deploying and managing an instance of the
+Bookstore API.
 
 ### Configure your environment.
 
-This demonstration uses the `gcloud` and `registry` tools,
-along with `jq` and `yq` for processing JSON and YAML, respectively. 
+This demonstration uses the `gcloud` and `registry` tools, along with `jq` and
+`yq` for processing JSON and YAML, respectively.
+
 - [`gcloud` installation instructions](https://cloud.google.com/sdk/docs/install)
 - [`registry` installation instructions](https://github.com/apigee/registry#the-registry-tool)
 - [`jq` installation instructions](https://stedolan.github.io/jq/download/)
@@ -53,8 +54,8 @@ to the appropriate project.
 
 ### 1. Register the Bookstore API.
 
-The [api](/api) directory contains API specifications and `registry` metadata to
-describe the Bookstore API. This can be added to API Hub with the following
+The [api](/api) directory contains API specifications and `registry` metadata
+to describe the Bookstore API. This can be added to API Hub with the following
 command:
 
 ```
@@ -62,11 +63,11 @@ registry apply -f api -R
 ```
 
 Note that we are loading a single API description that is written in the
-Protocol Buffers language in multiple files. The `api` directory includes
-the top-level definition of the API (`api/examples/bookstore/v1/bookstore.proto`)
+Protocol Buffers language in multiple files. The `api` directory includes the
+top-level definition of the API (`api/examples/bookstore/v1/bookstore.proto`)
 and all dependencies that are required to compile it (in`api/google`). The
-registry tool will collect all of these into a multifile Zip archive which
-is uploaded as the spec body.
+registry tool will collect all of these into a multifile Zip archive which is
+uploaded as the spec body.
 
 ### 2. Deploy your service backend.
 
