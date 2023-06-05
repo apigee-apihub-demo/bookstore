@@ -102,6 +102,8 @@ for our backend API.
 ./tools/DEPLOY-APIGATEWAY.sh
 ```
 
+Note that this step requires `registry-experimental` and `protoc`.
+
 ### 5. Register your API Gateway deployment.
 
 Let's add this gateway to our registry.
