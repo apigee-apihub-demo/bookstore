@@ -22,6 +22,7 @@ metadata:
     apihub-style: apihub-grpc
     apihub-target-users: public
     apihub-team: demo
+    apihub-kind: enrolled
     categories: reference
     provider: apihub-demo
     source: bookstore
@@ -29,7 +30,7 @@ metadata:
     apihub-primary-contact: apigee-apihub-demo@google.com
     apihub-primary-contact-description: Apigee API Hub demo managers
 data:
-  displayName: Bookstore API
+  displayName: Example Bookstore API
   description: Bookstore is a gRPC demonstration API.  It provides a few simple methods for accessing and modifying an inventory of books.
   recommendedVersion: v1
   versions:
