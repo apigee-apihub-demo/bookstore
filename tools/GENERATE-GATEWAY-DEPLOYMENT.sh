@@ -31,7 +31,7 @@ metadata:
   parent: apis/bookstore
   labels:
     platform: apigateway
-    apihub-gateway: apihub-google-cloud-api-gateway
+    apihub-gateway: google-cloud-api-gateway
   annotations:
     apihub-external-channel-name: API Gateway
     region: $REGION
